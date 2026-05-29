@@ -126,6 +126,7 @@ nav a:focus-visible {
     justify-content: center;
     cursor: pointer;
     color: white;
+    z-index: 120;
 }
 .burger-box {
     display: inline-block;
@@ -145,13 +146,13 @@ nav a:focus-visible {
     right: 0;
     transition: transform 0.25s ease, top 0.25s ease, opacity 0.2s ease;
 }
-.burger-inner { top: 50%; transform: translateY(-50%); }
-.burger-inner::before { content: '' ; top: -7px; }
-.burger-inner::after { content: '' ; top: 7px; }
+.burger-inner { top: 50%; transform: translateY(-50%); width: 100%; }
+.burger-inner::before { content: '' ; top: 50%; transform: translateY(-7px); }
+.burger-inner::after { content: '' ; top: 50%; transform: translateY(7px); }
 
-.burger[aria-expanded="true"] .burger-inner { transform: rotate(45deg); top: 50%; }
-.burger[aria-expanded="true"] .burger-inner::before { transform: rotate(90deg); top: 50%; opacity: 0; }
-.burger[aria-expanded="true"] .burger-inner::after { transform: rotate(90deg); top: 50%; }
+.burger[aria-expanded="true"] .burger-inner { transform: rotate(45deg); }
+.burger[aria-expanded="true"] .burger-inner::before { transform: rotate(90deg) translateY(0); opacity: 0; }
+.burger[aria-expanded="true"] .burger-inner::after { transform: rotate(90deg); }
 
 @media (max-width: 768px) {
     .burger { display: flex; }

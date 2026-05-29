@@ -88,9 +88,10 @@ showTestimonial(currentIndex);
 // ========== MOBILE BURGER MENU ==========
 const burgerBtn = document.getElementById('burgerBtn');
 const mainNav = document.getElementById('mainNav');
-
 if (burgerBtn && mainNav) {
+    console.debug('burger init', !!burgerBtn, !!mainNav);
     burgerBtn.addEventListener('click', () => {
+        console.debug('burger clicked');
         const expanded = burgerBtn.getAttribute('aria-expanded') === 'true';
         burgerBtn.setAttribute('aria-expanded', String(!expanded));
         mainNav.classList.toggle('open');
