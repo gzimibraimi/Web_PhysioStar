@@ -84,3 +84,37 @@ function previousTestimonial() {
 
 // Initial display
 showTestimonial(currentIndex);
+
+// ========== MOBILE BURGER MENU ==========
+const burgerBtn = document.getElementById('burgerBtn');
+const mainNav = document.getElementById('mainNav');
+
+if (burgerBtn && mainNav) {
+    burgerBtn.addEventListener('click', () => {
+        const expanded = burgerBtn.getAttribute('aria-expanded') === 'true';
+        burgerBtn.setAttribute('aria-expanded', String(!expanded));
+        mainNav.classList.toggle('open');
+    });
+
+    mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            burgerBtn.setAttribute('aria-expanded', 'false');
+            mainNav.classList.remove('open');
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!mainNav.contains(e.target) && !burgerBtn.contains(e.target) && mainNav.classList.contains('open')) {
+            burgerBtn.setAttribute('aria-expanded', 'false');
+            mainNav.classList.remove('open');
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+            burgerBtn.setAttribute('aria-expanded', 'false');
+            mainNav.classList.remove('open');
+            burgerBtn.focus();
+        }
+    });
+}
