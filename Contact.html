@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakti | PhysioStar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="brand">
+                <h1>PhysioStar</h1>
+                <p>Kontaktoni për terapi të personalizuar dhe mbështetje profesionale.</p>
+            </div>
+            <nav>
+                <a href="index.html">Ballina</a>
+                <a href="About.html">Rreth Nesh</a>
+                <a href="Services.html">Shërbimet</a>
+                <a href="Contact.html">Kontakti</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Faleminderit që jeni këtu</span>
+                <h1>Ne jemi gati t'ju ndihmojmë të keni lëvizje pa dhimbje.</h1>
+                <p>Na shkruani tani për një konsultë rapide ose rezervoni një seancë fizioterapie në qendrën tonë në Prishtinë.</p>
+                <div class="hero-actions">
+                    <a href="#contact-form" class="btn btn-primary">Dërgo Mesazh</a>
+                    <a href="index.html" class="btn btn-secondary">Kthehu te Ballina</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <span>24/7</span>
+                    <p>Konsultime dhe mbështetje online</p>
+                </div>
+                <div class="hero-card hero-card-alt">
+                    <span>+383</span>
+                    <p>Telefoni ynë i gatshëm për ju</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-grid">
+            <div class="contact-item">
+                <h3>Telefon</h3>
+                <p><strong>+383 123 456</strong></p>
+                <p>Disponibel: E hënë - E premte, 09:00 - 17:00</p>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p><strong>info@physiostar.com</strong></p>
+                <p>Përgjigje brenda 24 orëve</p>
+            </div>
+            <div class="contact-item">
+                <h3>Adresa</h3>
+                <p>Sh.B. "PhysioStar"</p>
+                <p>Rruga e Shënimit, Nr. 123, Prishtinë</p>
+            </div>
+            <div class="contact-item">
+                <h3>Orari</h3>
+                <p><strong>E hënë - E enjte:</strong> 09:00 - 18:00</p>
+                <p><strong>E premte:</strong> 09:00 - 17:00</p>
+                <p><strong>E shtunë:</strong> 09:00 - 14:00</p>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Dërgoni Mesazh</h2>
+            <form id="contactForm">
+                <label for="contact-name">Emri</label>
+                <input type="text" id="contact-name" name="name" placeholder="Emri juaj" required>
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="email@adresë.com" required>
+                <label for="subject">Tema</label>
+                <input type="text" id="subject" name="subject" placeholder="Për çfarë dëshironi të flisni" required>
+                <label for="message">Mesazhi</label>
+                <textarea id="message" name="message" rows="5" placeholder="Shkruani mesazhin tuaj këtu" required></textarea>
+                <button type="submit" class="submit-btn">Dërgo</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PhysioStar | +383 123 456 | info@physiostar.com | Prishtinë, Kosovë</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

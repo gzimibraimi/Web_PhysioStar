@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysioStar | Fizioterapi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="brand">
+                <h1>PhysioStar</h1>
+                <p>Trajtime të personalizuara për shëndetin tuaj fizik.</p>
+            </div>
+            <nav>
+                <a href="index.html">Ballina</a>
+                <a href="About.html">Rreth Nesh</a>
+                <a href="Services.html">Shërbimet</a>
+                <a href="Contact.html">Kontakti</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Kujdes Profesional</span>
+                <h1>Rikthehuni në formë me terapi moderne dhe të sigurt.</h1>
+                <p>PhysioStar ofron rehabilitim të personalizuar, trajtime për dhimbje shpine dhe qafe, dhe programe të dizajnuara për rikuperim të shpejtë dhe të qëndrueshëm.</p>
+                <div class="hero-actions">
+                    <a href="Services.html" class="btn btn-primary">Shiko Shërbimet</a>
+                    <a href="Contact.html" class="btn btn-secondary">Bëj Një Pyetje</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <span>+50</span>
+                    <p>Pacientë të kënaqur çdo muaj</p>
+                </div>
+                <div class="hero-card hero-card-alt">
+                    <span>10</span>
+                    <p>Vite përvojë në fizioterapi</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-grid">
+            <article class="feature-card">
+                <h3>Pse të zgjidhni PhysioStar?</h3>
+                <p>Ne kombinojmë ekspertizën klinike me programe rehabilitimi të personalizuara për të ndihmuar pacientët të rikthehen në aktivitetet e tyre të përditshme më shpejt dhe më të fortë.</p>
+                <ul class="service-list">
+                    <li>Trajtim i dhimbjeve kronike</li>
+                    <li>Rehabilitim pas operacioneve</li>
+                    <li>Mbështetje për sportistë</li>
+                </ul>
+            </article>
+            <article class="feature-card">
+                <h3>Shërbimet Kryesore</h3>
+                <ul class="service-list">
+                    <li>Rehabilitim pas operacioneve</li>
+                    <li>Terapia e dhimbjeve të shpinës dhe qafës</li>
+                    <li>Rehabilitim sportiv dhe gerijatrija</li>
+                    <li>Këshillim për parandalim lëndimesh</li>
+                </ul>
+                <p><a href="Services.html">Shiko të gjitha shërbimet →</a></p>
+            </article>
+        </section>
+
+        <section id="testimonials">
+            <h2>Çfarë thonë klientët</h2>
+            <div class="testimonial-slider">
+                <button class="prev" onclick="previousTestimonial()">&#10094;</button>
+                <div class="testimonial-container">
+                    <div class="testimonial active">
+                        <strong>Ana Krasniqi</strong>
+                        <p>"Kam qenë në trajtim për dhimbje kronike të shpinës dhe jam shumë e kënaqur me rezultatet. Fizioterapisti ishte shumë profesional dhe e kuptoi menjëherë nevojën time."</p>
+                    </div>
+                    <div class="testimonial">
+                        <strong>Marko Jovanović</strong>
+                        <p>"Pas një operacioni të meniskut, fizioterapia ishte thelbësore për rikuperimin tim. Trajtimi ishte i shkëlqyer dhe ekipa shumë e kujdesshme."</p>
+                    </div>
+                    <div class="testimonial">
+                        <strong>Elira Shkodra</strong>
+                        <p>"Ishte një eksperiencë fantastike! Dhembjet e muskujve dhe lëndimet u trajtuan me shumë kujdes dhe profesionalizëm."</p>
+                    </div>
+                </div>
+                <button class="next" onclick="nextTestimonial()">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="appointments">
+            <h2>Rezervoni një seancë</h2>
+            <form id="appointmentForm">
+                <label for="name">Emri</label>
+                <input type="text" id="name" name="name" placeholder="Emri juaj" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@adresë.com" required>
+                <label for="date">Data</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Ora</label>
+                <input type="time" id="time" name="time" required>
+                <button id="rezervim" type="submit">Rezervo</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PhysioStar | +383 123 456 | info@physiostar.com | Prishtinë, Kosovë</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

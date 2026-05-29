@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rreth Nesh | PhysioStar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="brand">
+                <h1>PhysioStar</h1>
+                <p>Kujdes i ngrohtë, ekspertizë e saktë.</p>
+            </div>
+            <nav>
+                <a href="index.html">Ballina</a>
+                <a href="About.html">Rreth Nesh</a>
+                <a href="Services.html">Shërbimet</a>
+                <a href="Contact.html">Kontakti</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Mbi ne</span>
+                <h1>Në PhysioStar, çdo pacient është një histori suksesi.</h1>
+                <p>Ne punojmë me një qasje të kujdesshme dhe të bazuar në prova, duke ofruar trajtime fizioterapike të personalizuara për çdo nevojë dhe fazë të rikuperimit.</p>
+                <div class="hero-actions">
+                    <a href="Contact.html" class="btn btn-primary">Rezervo Konsultë</a>
+                    <a href="Services.html" class="btn btn-secondary">Shiko Shërbimet</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <span>100%</span>
+                    <p>Kujdes i personalizuar për çdo pacient</p>
+                </div>
+                <div class="hero-card hero-card-alt">
+                    <span>12+</span>
+                    <p>Vite përvojë në rehabilitim profesionist</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-grid">
+            <article class="feature-card">
+                <h3>Vlera jonë</h3>
+                <p>Ne besojmë në rikthimin e besimit të pacientit përmes trajtimit human, planit të duhur dhe mbështetjes së vazhdueshme.</p>
+                <ul class="service-list">
+                    <li>Plan individual terapeutik</li>
+                    <li>Trajtim i bazuar në qëllime reale</li>
+                    <li>Mbështetje gjatë gjithë rikuperimit</li>
+                </ul>
+            </article>
+            <article class="feature-card">
+                <h3>Rruget tona</h3>
+                <ul class="service-list">
+                    <li>Analizë fillestare e gjendjes</li>
+                    <li>Ushtrime të dizajnuara sipas diagnozës</li>
+                    <li>Monitorim progresi me matje të rregullta</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="appointments">
+            <h2>Rezervoni seancën e parë</h2>
+            <form id="appointmentForm">
+                <label for="name">Emri</label>
+                <input type="text" id="name" name="name" placeholder="Emri juaj" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@adresë.com" required>
+                <label for="date">Data</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Ora</label>
+                <input type="time" id="time" name="time" required>
+                <button id="rezervim" type="submit">Rezervo</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PhysioStar | +383 123 456 | info@physiostar.com | Prishtinë, Kosovë</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
